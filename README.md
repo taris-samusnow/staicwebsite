@@ -1,1 +1,2 @@
 # staicwebsite
+node_modules
