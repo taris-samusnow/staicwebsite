@@ -1,2 +1,0 @@
-# staicwebsite
-node_modules
