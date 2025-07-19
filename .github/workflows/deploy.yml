@@ -18,9 +18,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: corepack enable
-      - run: yarn install
-      - run: yarn build   # → dist/ が生成される
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build   # → dist/ が生成される
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
